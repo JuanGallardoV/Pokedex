@@ -31,10 +31,42 @@
                         <span>Registrar Pokemon</span>
                     </div>
                     <div class="card-body">
-
+                        <div class="mb-3">
+                            <label class="form-label" for="nombre-txt">Nombre:</label>
+                            <input class="form-control" id="nombre-txt" type="text">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="desc-txt">Descripción:</label>
+                            <input class="form-control" type="text" id="desc-txt">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="legend-rb">Legendario:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="legend-rb" id="legend-si">
+                                <label class="form-check-label" for="legend-si">Si</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="legend-rb" id="legend-no">
+                                <label class="form-check-label" for="legend-no">No</label>                                
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="tipo-select">Tipo:</label>
+                            <select class="form-select" id="tipo-select">
+                                <option value="planta">Planta</option>
+                                <option value="fuego">Fuego</option>
+                                <option value="agua">Agua</option>
+                                <option value="normal">Normal</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="card-footer">
-
+                    <div class="card-footer row">
+                        <div class="col-6">
+                            <button class="btn btn-success" id="registrar-btn" type="button">Registrar</button>
+                        </div>
+                        <div class="col-6 text-end q">
+                            <button class="btn btn-info" id="limpiar-btn"type="button">Limpiar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,7 +76,33 @@
                         <span>Pokedex</span>
                     </div>
                     <div class="card-body">
-
+                        <table class="table table-hover table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>NRO</th>
+                                    <th>Nombre</th>
+                                    <th>Tipo</th>
+                                    <th>Descripcion</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bulbasaur</td>
+                                    <td>Planta</td>
+                                    <td>El inicial que nadie usa</td>
+                                    <td>Eliminar</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Charmander</td>
+                                    <td>Fuego</td>
+                                    <td>Top inicial</td>
+                                    <td>Eliminar</td>  
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -52,6 +110,6 @@
     
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
+    <script src="js/index.js"></script>
   </body>
 </html>
